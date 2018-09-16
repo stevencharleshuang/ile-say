@@ -1,7 +1,7 @@
-DROP DATABASE react_blog;
-CREATE DATABASE react_blog;
+DROP DATABASE ile_say;
+CREATE DATABASE ile_say;
 
-\c react_blog
+\c ile_say
 
 DROP TABLE IF EXISTS users CASCADE;
 

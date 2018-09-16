@@ -1,6 +1,6 @@
 \c ile_say
 
-INSERT INTO users(name,username,email,password,avatar_url) VALUES
+INSERT INTO users(fName,lName,username,email,password,avatar_url) VALUES
  ('John','Doe','johndope','john.doe@gmail.com','asdfasdf','john.jpg')
 ,('Jane','Doe','janemane','jane.doe@gmail.com','fdsafasfda','jane.jpg')
 ,('Alex','Smith','asmith','alex.smith@email.com','lfsjvklkvxcx','alex.jpg')

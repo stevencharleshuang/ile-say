@@ -30,14 +30,16 @@ module.exports =  {
     // console.log('usersModel says: save(user) = ', user);
     return db.one(`
       INSERT INTO users (
-                  name,
+                  fName,
+                  lName,
                   username,
                   email,
                   password,
                   avatar_url
                   )
            VALUES (
-                  $/name/,
+                  $/fName/,
+                  $/lName/,
                   $/username/,
                   $/email/,
                   $/password/,
@@ -52,7 +54,8 @@ module.exports =  {
     // console.log(`reached models, args = user: ${user.name} id: ${id}`);
     return db.one(`
          UPDATE users
-            SET name       = $/name/,
+            SET fName      = $/fName/,
+                lName      = $/lName/
                 username   = $/username/,
                 email      = $/email/,
                 password   = $/password/,
